@@ -1,8 +1,8 @@
 import pytest
-from main import count_vowels  # Импортируем функцию из main.py
+from main import count_vowels
 
 def test_only_vowels():
-    assert count_vowels("аеёиоуыэюя") == 10  # Обратите внимание, что буква ё также считается гласной
+    assert count_vowels("аеёиоуыэюя") == 10 
     assert count_vowels("АЕЁИОУЫЭЮЯ") == 10
 
 def test_no_vowels():
